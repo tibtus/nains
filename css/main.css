@@ -46,6 +46,22 @@ footer {
   margin-bottom: 100px;
 }
 
+a {
+  text-decoration: none;
+  color: #EDEDED;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:hover {
+  /*outline: none;*/
+  text-decoration: underline;
+  color: #FFFFFF;
+
+}
+
 .wrapper {
   display: block;
   width: 1170px;
@@ -72,17 +88,29 @@ footer {
   grid-area: 3 / 1 / 4 / 2;
 }
 
+/*Заголовок і навігаційне меню */
+/*Header*/
+
 .Header_Block {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+
 }
+
+/* Основний вміст сторінки */
+/*Main_Block 1*/
 
 .Main_Block {
   display: block;
   background: url("../img/image.png") center/cover;
-  min-height: calc(100vh - 120px);
+  min-height: calc(100vh - 248px);
   color: #68092D;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
 
 .Main_Block h1 {
@@ -99,33 +127,233 @@ footer {
 
 }
 
+.Header_Block .logo {
+  background: url("../img/logo.png") center/cover;
+  width: 94px;
+  height: 50px;
+
+}
+
+.Header_Block li .vector {
+  background: url("../img/vector.png") center/cover;
+  width: 40px;
+  height: 40px;
+
+}
+
+.Header_Block_ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.Header_Block_ul li {
+  margin: 10px 20px;
+}
+
+/*About_Us_Block 2*/
 
 .About_Us_Block {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0px 100px 80px 100px;
+  height: 596px;
 
 
 }
+
+.About_Us_Block h2 {
+  display: block;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 42px;
+  text-transform: uppercase;
+  color: #68092D;
+  text-align: center;
+
+}
+
+
+.About_Us_Block_description {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.About_Us_Block_description span {
+  width: 100%;
+}
+
+.About_Us_Block_Line {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 582px;
+  margin: 20px auto;
+}
+
+.About_Us_Block_Line .image {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100px;
+}
+
+.About_Us_Block_Line .image-a {
+  background-image: url("../img/Line 3.png");
+  width: 570px;
+  height: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.About_Us_Block_Line .image-b {
+  background-image: url("../img/Ellipse_1.png");
+  width: 12px;
+  height: 12px;
+  left: 0;
+  top: calc(50% + 1px);
+  transform: translateY(-50%);
+}
+
+.About_Us_Block_Line .image-c {
+  background-image: url("../img/Ellipse_3.png");
+  width: 26px;
+  height: 26px;
+  left: 50%;
+  top: calc(50% + 1px);
+  transform: translate(-50%, -50%);
+}
+
+.About_Us_Block_Line .image-d {
+  background-image: url("../img/Ellipse_2.png");
+  width: 12px;
+  height: 12px;
+  right: 0;
+  top: calc(50% + 1px);
+  transform: translateY(-50%);
+}
+
+
+.About_Us_Block_container {
+  display: flex;
+  position: relative;
+  bottom: 0;
+}
+
+.About_Us_Block_image {
+  max-width: 582px;
+  margin: 20px auto;
+}
+
+.About_Us_Block_image .image {
+  position: absolute;
+  top: 0;
+
+}
+
+.About_Us_Block_image .image-a {
+  background-image: url("../img/image_1.png");
+  width: 337px;
+  height: 213px;
+  left: 0;
+  /*transform: translateX(-50%);*/
+}
+
+.About_Us_Block_image .image-b {
+  background-image: url("../img/image_2.png");
+  width: 232px;
+  height: 192px;
+  left: calc(20% + 1px);
+  top: calc(50% + 1px);
+}
+
+
+.About_Us_Block_text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  width: 442px;
+}
+
+
+/*Activities_Block 3*/
 
 .Activities_Block {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 80px 100px 80px 100px;
+  height: 596px;
+  align-content: center;
+
 
 }
+
+.Activities_Block div {
+  flex: 0 1 48%;
+  border: 1px solid red;
+  height: 298px;
+
+
+}
+
+.Activities_Block h2 {
+  display: block;
+  font-weight: 800;
+  font-size: 42px;
+  text-transform: uppercase;
+  color: #68092D;
+  text-align: center;
+
+
+}
+
+
+/*For_Clients_Block4*/
 
 .For_Clients_Block {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 80px 100px 80px 100px;
+  height: 596px;
 
 }
+
+/*Responsebility_Block 5*/
 
 .Responsebility_Block {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 80px 100px 80px 100px;
+  height: 596px;
 
 }
+
+/*Countries_Block 6*/
 
 .Countries_Block {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 80px 100px 80px 100px;
+  height: 596px;
 
 }
 
+
+/*Підвал сайту */
+/*Bottom_Block*/
 
 .Bottom_Block {
   display: block;
