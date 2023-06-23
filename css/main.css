@@ -300,9 +300,18 @@ a:hover {
 
 .Activities_Block div {
   flex: 0 1 48%;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   height: 298px;
+  box-sizing: border-box;
 
+
+}
+
+.Activities_Block_description {
+  width: 100%;
+  display: flex;
+  padding: 150px 58px;
+  box-sizing: border-box;
 
 }
 
@@ -317,6 +326,83 @@ a:hover {
 
 }
 
+.Activities_Block .Activities_Block_Ellipse {
+  display: block;
+  position: relative;
+  flex-direction: column;
+
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+
+  text-align: left;
+
+}
+
+.Activities_Block .Activities_Block_Ellipse .Activities_Block_Ellipse_view {
+  position: absolute;
+  display: block;
+  border-radius: 10px;
+  border: 2px solid #5F5A5A;
+  height: 217px;
+  bottom: 0;
+  padding: 24px 58px;
+  width: 400px;
+  right: 0;
+}
+
+.Activities_Block .Activities_Block_Ellipse .Activities_Block_Ellipse_view::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 30px;
+  height: 2px;
+  width: 200px;
+  background-color: #F4F4F4;
+
+}
+
+.Activities_Block .Activities_Block_Ellipse .Activities_Block_Ellipse_view.left {
+  left: 0;
+  bottom: 0;
+
+}
+
+
+.Activities_Block_Ellipse_image_a {
+  position: absolute;
+  background-image: url("../img/Group_3.png");
+  width: 70px;
+  height: 70px;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  transform: translateX(120%) translateY(-15%);
+}
+
+.Activities_Block_Ellipse_image_b {
+  position: absolute;
+  background-image: url("../img/Group_2.png");
+  width: 100px;
+  height: 70px;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  transform: translateX(80%) translateY(-15%);
+}
+
+.Activities_Block_Ellipse_image_c {
+  position: absolute;
+  background-image: url("../img/Group_1.png");
+  width: 70px;
+  height: 70px;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  transform: translateX(120%) translateY(-15%);
+}
+
 
 /*For_Clients_Block4*/
 
@@ -327,7 +413,104 @@ a:hover {
   padding: 80px 100px 80px 100px;
   height: 596px;
 
+
 }
+
+.For_Clients_Block_Name h2 {
+  display: block;
+  font-weight: 800;
+  font-size: 42px;
+  text-transform: uppercase;
+  color: #68092D;
+  text-align: left;
+}
+
+.For_Clients_Block_Desc {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  position: relative;
+}
+
+.For_Clients_Block_Text {
+  width: 504px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+
+}
+
+.For_Clients_Block_Button {
+  display: block;
+  width: 261px;
+  height: 47px;
+  position: absolute;
+  background-image: url("../img/Button.png");
+  top: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  transform: translateY(100%);
+}
+
+.For_Clients_Block_Cart {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  /*position: relative;*/
+  margin-top: 20px;
+}
+
+.For_Clients_Block_Cart div {
+  width: 270px;
+  height: 348px;
+
+}
+
+.For_Clients_Block_Cart_img {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: #EDEDED;
+}
+
+
+.For_Clients_Block_Cart_text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  padding: 0 45px;
+}
+
+.For_Clients_Block_Cart_text span {
+  font-size: 22px;
+  line-height: 20px;
+  font-weight: 800;
+
+}
+
+.For_Clients_Block_Cart_img1 {
+  background-image: url("../img/image_4.png");
+  top: 0;
+  right: 0;
+  background-repeat: no-repeat;
+}
+
+.For_Clients_Block_Cart_img2 {
+  background-image: url("../img/image_5.png");
+  top: 0;
+  right: 0;
+  background-repeat: no-repeat;
+}
+
+.For_Clients_Block_Cart_img3 {
+  background-image: url("../img/image_6.png");
+  top: 0;
+  right: 0;
+  background-repeat: no-repeat;
+}
+
 
 /*Responsebility_Block 5*/
 
