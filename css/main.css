@@ -55,7 +55,6 @@ li {
 }
 
 a:hover {
-  /*outline: none;*/
   text-decoration: underline;
   color: #FFFFFF;
 
@@ -263,7 +262,6 @@ a:hover {
   width: 337px;
   height: 213px;
   left: 0;
-  /*transform: translateX(-50%);*/
 }
 
 .About_Us_Block_image .image-b {
