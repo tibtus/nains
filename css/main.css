@@ -673,22 +673,277 @@ a:hover {
   text-transform: uppercase;
 }
 
-/* Додайте медіа-запити для адаптивного дизайну */
 
 @media screen and (max-width: 768px) {
   .Countries_Block {
     flex-direction: column;
+
   }
 
-  /*  .Countries_Block_left {
-      width: 100%;
-      height: auto;
-    }
+  .Header_Block_ul {
+    display: none;
+  }
 
-    .Countries_Block_Right {
-      width: 100%;
-      height: auto;
-    }*/
+  .Header_Block {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  .About_Us_Block {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px 10px 100px;
+    height: 1000px;
+  }
+
+  .About_Us_Block h2 {
+
+    font-size: 60px;
+
+
+  }
+
+  .About_Us_Block_description {
+    display: flex;
+    font-size: 40px;
+    margin: 0 auto;
+    padding: 20px;
+
+  }
+
+  .About_Us_Block_text p {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    width: 500px;
+    max-height: 1200px;
+  }
+
+
+  .Activities_Block {
+    display: flex;
+    justify-content: center;
+    padding: 10px 100px 10px 100px;
+    height: 1600px;
+
+  }
+
+  .Activities_Block div {
+    flex: 0 1 99%;
+    height: 298px;
+    box-sizing: border-box;
+
+
+  }
+
+  .Activities_Block_description {
+    width: 100%;
+    display: flex;
+    padding: 150px 58px;
+    box-sizing: border-box;
+
+
+  }
+
+  .Activities_Block h2 {
+    font-size: 60px;
+    align-content: center;
+    margin: 0 auto;
+  }
+
+  .Activities_Block .Activities_Block_Ellipse {
+    flex-direction: column;
+    width: 100%;
+    font-size: 18px;
+    margin: 0 20px;
+    height: 410px;
+
+
+  }
+
+  .Activities_Block .Activities_Block_Ellipse .Activities_Block_Ellipse_view {
+    font-size: 30px;
+    line-height: 30px;
+    height: 250px;
+    width: 100%;
+
+
+  }
+
+
+  .For_Clients_Block {
+    display: flex;
+    padding: 10px 100px 10px 100px;
+    height: 3600px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .For_Clients_Block_Name h2 {
+    display: block;
+    font-size: 60px;
+    align-content: center;
+  }
+
+  .For_Clients_Block_Desc {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 150px 0;
+  }
+
+  .For_Clients_Block_Button {
+    display: none;
+  }
+
+  .For_Clients_Block_Text {
+    font-size: 30px;
+    line-height: 30px;
+    height: 250px;
+    width: 100%;
+
+  }
+
+
+  .For_Clients_Block_Cart {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .For_Clients_Block_Cart div {
+    width: 800px;
+    height: 800px;
+    margin-bottom: 40px;
+  }
+
+  .For_Clients_Block_Cart_img {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 800px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .For_Clients_Block_Cart_img1, .For_Clients_Block_Cart_img2, .For_Clients_Block_Cart_img3 {
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+  }
+
+
+  .For_Clients_Block_Cart_text p {
+    font-size: 30px;
+    line-height: 30px;
+
+  }
+
+  .For_Clients_Block_Cart_text span {
+    font-size: 42px;
+    line-height: 42px;
+
+  }
+
+
+  .Responsebility_Block {
+    text-align: center;
+    align-items: center;
+
+  }
+
+  .Responsebility_Block_Name h2 {
+    display: block;
+    font-size: 60px;
+    align-content: center;
+
+
+  }
+
+  .Responsebility_Block_Desc {
+    font-size: 30px;
+    line-height: 30px;
+    width: 100%;
+
+  }
+
+  .Responsebility_Block_img {
+    transform: translateX(0%) translateY(-80%);
+  }
+
+
+  .Countries_Block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  .Countries_Block_left {
+    margin-top: -150px;
+    margin-bottom: -150px;
+  }
+
+
+  .Countries_Block_line {
+    display: none;
+  }
+
+
+  .Countries_Block_Name h2 {
+    width: 500px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+  }
+
+
+  .Countries_Block_Country {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+
+
+  }
+
+
+  .Bottom_Block {
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+
+  }
+
+  .Bottom_Block_logo {
+
+    margin: 20px auto;
+
+
+  }
+
+  .Bottom_Block_tel a {
+    padding: 30px;
+
+  }
+
+
+  .Bottom_Block_address, .Bottom_Block_tel, .Bottom_Block_id {
+    padding: 20px;
+
+  }
+
+
 }
 
 
