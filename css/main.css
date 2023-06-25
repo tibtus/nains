@@ -6,6 +6,7 @@ html {
   font-size: 18px;
   line-height: 120%;
   font-family: 'Mulish', sans-serif;
+  scroll-behavior: smooth;
 }
 
 
@@ -660,8 +661,27 @@ a:hover {
   height: 50px;
 }
 
+
 .Bottom_Block_id {
   text-transform: uppercase;
+}
+
+/* Додайте медіа-запити для адаптивного дизайну */
+
+@media screen and (max-width: 768px) {
+  .Countries_Block {
+    flex-direction: column;
+  }
+
+  .Countries_Block_left {
+    width: 100%;
+    height: auto;
+  }
+
+  .Countries_Block_Right {
+    width: 100%;
+    height: auto;
+  }
 }
 
 
