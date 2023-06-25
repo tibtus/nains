@@ -41,9 +41,7 @@ main {
 
 footer {
   display: block;
-  border: 1px solid red;
-  margin-top: 100px;
-  margin-bottom: 100px;
+
 }
 
 a {
@@ -568,8 +566,8 @@ a:hover {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  padding: 80px 20px 80px 20px;
-  height: 596px;
+  padding: 0px 20px 20px 20px;
+
 
 }
 
@@ -582,21 +580,20 @@ a:hover {
 
 .Countries_Block_left_map {
   display: block;
+  align-items: center;
   width: 100%;
   height: 100%;
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
 }
 
-
 .Countries_Block_Right {
   display: flex;
   justify-content: center;
+  /*align-items: center; */
   flex-direction: row;
   height: 676px;
-  border: 1px solid blue;
   width: 430px;
-
 }
 
 .Countries_Block_line {
@@ -605,24 +602,31 @@ a:hover {
   height: 100%;
   background-image: url("../img/Line.png");
   background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Countries_Block_Name {
+  margin-top: 32%;
 
 }
 
 
 .Countries_Block_Name h2 {
   display: block;
-  font-weight: 800;
-  font-size: 42px;
-  line-height: 52px;
+
+
   text-transform: uppercase;
   color: #68092D;
   text-align: left;
+  width: 339px;
+
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 53px;
+
 
 }
 
-.Countries_Block_line {
-  /*LINE*/
-}
 
 .Countries_Block_Country {
   font-size: 18px;
@@ -637,5 +641,27 @@ a:hover {
 /*Bottom_Block*/
 
 .Bottom_Block {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 80px 20px 80px 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #68092D;
+  text-align: left;
+
+
 }
+
+.Bottom_Block_logo {
+  background: url("../img/logo_footer.png") center/cover;
+  width: 94px;
+  height: 50px;
+}
+
+.Bottom_Block_id {
+  text-transform: uppercase;
+}
+
+
