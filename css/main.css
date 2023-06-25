@@ -661,6 +661,11 @@ a:hover {
   height: 50px;
 }
 
+.Bottom_Block_tel a {
+  text-decoration: none;
+  color: inherit;
+}
+
 
 .Bottom_Block_id {
   text-transform: uppercase;
@@ -673,15 +678,15 @@ a:hover {
     flex-direction: column;
   }
 
-  .Countries_Block_left {
-    width: 100%;
-    height: auto;
-  }
+  /*  .Countries_Block_left {
+      width: 100%;
+      height: auto;
+    }
 
-  .Countries_Block_Right {
-    width: 100%;
-    height: auto;
-  }
+    .Countries_Block_Right {
+      width: 100%;
+      height: auto;
+    }*/
 }
 
 
