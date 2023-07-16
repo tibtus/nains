@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title></title>
   <meta content="" name="description">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <meta content="" property="og:title">
   <meta content="" property="og:type">
@@ -14,17 +14,80 @@
 
   <link href="site.webmanifest" rel="manifest">
   <link href="icon.png" rel="apple-touch-icon">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 
+  <link color="#5bbad5" href="/safari-pinned-tab.svg" rel="mask-icon">
+  <meta content="#da532c" name="msapplication-TileColor">
+  <meta content="#ffffff" name="theme-color">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F24JX4MVJY"></script>
 
-  <meta content="#fafafa" name="theme-color">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-F24JX4MVJY');
+  </script>
+  <!-- Змінна для визначення поточної мови -->
+  <script>
+    var currentLanguage = 'en'; // За замовчуванням мова - англійська
+  </script>
+  <script>
+    // Функція зміни мови
+    function changeLanguage(language) {
+      currentLanguage = language;
+      updatePageContent();
+      closeLanguageModal();
+    }
+
+    // Функція оновлення вмісту сторінки залежно від поточної мови
+    function updatePageContent() {
+      // Отримуємо всі елементи, які мають атрибут data-* для мов
+      var elements = document.querySelectorAll('[data-en], [data-de], [data-ua]');
+
+      // Проходимо по кожному елементу і змінюємо його текст відповідно до поточної мови
+      elements.forEach(function (element) {
+        var text = element.getAttribute('data-' + currentLanguage);
+        element.textContent = text;
+      });
+    }
+
+    // Функція відкриття модального вікна
+    function openLanguageModal() {
+      var modal = document.getElementById('modalLanguage');
+      modal.style.display = 'block';
+    }
+
+    // Функція закриття модального вікна
+    function closeLanguageModal() {
+      var modal = document.getElementById('modalLanguage');
+      modal.style.display = 'none';
+    }
+
+    // Додаємо слухач подій на клік поза модальним вікном, щоб закривати його
+    window.onclick = function (event) {
+      var modal = document.getElementById('modalLanguage');
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    }
+
+    // Викликаємо функцію оновлення вмісту сторінки після завантаження
+    window.onload = function () {
+      updatePageContent();
+    };
+  </script>
+
 </head>
 
 <body class="parent">
+
+<!-- Приклад використання атрибуту data-* для елемента -->
+<!-- <div data-en="Hello" data-de="Hallo" data-ua="Привіт" id="greeting"></div> -->
 
 <!-- Заголовок і навігаційне меню -->
 <!--Header-->
@@ -39,21 +102,41 @@
         </div>
       </a>
 
-      <!--      <div class="logo">
 
-            </div>-->
       <ul class="Header_Block_ul">
-        <li><a href="#About_Us_Block">About N.A. Invest</a></li>
-        <li><a href="#Activities_Block">Activities</a></li>
-        <li><a href="#For_Clients_Block">For Clients</a></li>
-        <li><a href="#Responsebility_Block">Responsebility</a></li>
+
+
+        <!-- <li><a href="#About_Us_Block">About N.A. Invest</a></li> -->
+        <li><a data-de="About N.A. Invest" data-en="About N.A. Invest " data-ua="About N.A. Invest"
+               href="#About_Us_Block">About N.A. Invest</a></li>
+        <li><a data-de="Activities" data-en="Activities" data-ua="Activities" href="#Activities_Block">Activities</a>
+        </li>
+        <li><a data-de="For Clients" data-en="For Clients" data-ua="For Clients" href="#For_Clients_Block">For
+          Clients</a></li>
+        <li><a data-de="Responsebility" data-en="Responsebility" data-ua="Responsebility" href="#Responsebility_Block">Responsebility</a>
+        </li>
         <li>
 
-          <a href="#Country">
+          <a href="#" onclick="openLanguageModal();">
             <div class="vector"></div>
           </a>
 
-          <!--<div class="vector"></div>-->
+
+          <!-- Модальне вікно для зміни мови -->
+          <div class="modalnewlang" id="modalLanguage">
+            <div class="modal-content-lang">
+              <!-- Кнопка закриття -->
+              <button class="close-button-lang" onclick="closeLanguageModal()">&times;</button>
+              <!-- Варіанти мов -->
+              <ul class="language-options">
+                <li><a href="#" onclick="changeLanguage('en')">EN</a></li>
+                <li><a href="#" onclick="changeLanguage('de')">GE</a></li>
+                <li><a href="#" onclick="changeLanguage('ua')">UA</a></li>
+              </ul>
+            </div>
+          </div>
+
+
         </li>
       </ul>
 
@@ -68,9 +151,11 @@
 
   <!--Main_Block 1-->
 
-  <section class="Main_Block" id="Main">
-    <h1>N.A. INVEST</h1>
-    <p>Transforming opportunities into results</p>
+  <section class="Main_Block" id="Main_Block">
+    <div class="Main_Block_img">
+      <h1>N.A. INVEST</h1>
+      <p>Transforming opportunities into results</p>
+    </div>
   </section>
 
   <!--About_Us_Block 2-->
@@ -138,7 +223,7 @@
 
       <div class="Activities_Block_Ellipse_view left">
         <div class="Activities_Block_Ellipse_image_b"></div>
-        <h3>Trading</h3>
+        <h3>Commodity trading</h3>
         <p>Quality, reliability, and continuity are the principles that underpin the company's trading activities. We
           are ready to become a partner you can rely on. </p>
       </div>
@@ -178,6 +263,31 @@
       <div class="For_Clients_Block_Button"></div>
     </div>
 
+    <!-- Модальное окно -->
+    <!-- <div id="modalnew" class="modalnew">
+      <div class="modal-content">
+        <div class="modal-content-info">Select the area of activity</div>
+        <form id="feedbackForm" method="post" action="functions.php">
+          <div>
+            <input type="text" id="companyName" name="companyName" value="Name your company:" onfocus="clearInput(this)" onblur="restoreInput(this)" required>
+          </div>
+          <div>
+            <input type="text" id="yourName" name="yourName" value="Your name:" onfocus="clearInput(this)" onblur="restoreInput(this)" required>
+          </div>
+          <div>
+            <input type="tel" id="phoneNumber" name="phoneNumber" value="Phone number:" onfocus="clearInput(this)" onblur="restoreInput(this)" required>
+          </div>
+          <div>
+            <input type="email" id="email" name="email" value="E-mail:" onfocus="clearInput(this)" onblur="restoreInput(this)" required>
+          </div>
+          <div class="submit-button">
+            <input type="submit" value="Сontact for cooperation">
+          </div>
+        </form>
+      </div>
+    </div> -->
+
+
     <div class="For_Clients_Block_Cart">
       <div class="For_Clients_Block_Cart_img">
         <div class="For_Clients_Block_Cart_img1">
@@ -186,7 +296,7 @@
         <div class="For_Clients_Block_Cart_text">
 
           <p>
-            <span>Trading</span> <br> <br>
+            <span>Commodity trading</span> <br> <br>
             Raw material <br><br>
             Industrial goods <br><br>
             Industrial equipment <br><br>
@@ -282,6 +392,7 @@
             Bulgari <br>
             Kazakhstan <br>
             USA <br>
+            Portugal <br>
           </p>
         </div>
       </div>
