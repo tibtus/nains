@@ -7,6 +7,10 @@ License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+* {
+  box-sizing: border-box;
+}
+
 
 body {
   margin: 0;
@@ -221,7 +225,7 @@ body {
 
 header {
   display: block;
-  width: 100%;
+  /* width: 100%; */
   background: #68092D;
 }
 
@@ -254,8 +258,10 @@ a:hover {
 
 .wrapper {
   display: block;
-  width: 1170px;
+  /* width: 1170px; */
+  max-width: 1170px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .parent {
@@ -1033,13 +1039,45 @@ input[type="submit"] {
 
 
 @media screen and (max-width: 768px) {
+
+  .wrapper {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 50px;
+    /* overflow: hidden; */
+  }
+
+
+  .Main_Block_img {
+    display: block;
+    background: url("../img/image.png") center/cover;
+    height: 768px;
+    width: 100%;
+  }
+
+  .Main_Block h1 {
+    font-size: 58px;
+    padding-top: 200px;
+    width: 100%;
+
+  }
+
+  .Main_Block p {
+    font-style: normal;
+    font-size: 20px;
+    width: 100%;
+  }
+
+
   .Countries_Block {
     flex-direction: column;
-
+    width: 100%;
   }
 
   .Header_Block_ul {
     display: none;
+    width: 100%;
   }
 
   .Header_Block {
@@ -1047,44 +1085,94 @@ input[type="submit"] {
     align-content: center;
     justify-content: center;
     margin: 20px;
+    width: 100%;
   }
 
   .About_Us_Block {
     display: flex;
     justify-content: space-between;
-    padding: 0px 100px 10px 100px;
+    padding: 10px 10px 10px 10px;
     height: 1000px;
+    width: 100%;
   }
 
   .About_Us_Block h2 {
-
-    font-size: 60px;
+    width: 100%;
+    font-size: 46px;
 
 
   }
 
   .About_Us_Block_description {
     display: flex;
-    font-size: 40px;
+    font-size: 11px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0px;
+    width: 100%;
 
   }
 
+  .About_Us_Block_description span {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .About_Us_Block_Line {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+  }
+
+
+  .About_Us_Block_image {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .About_Us_Block_image .image {
+    position: absolute;
+    top: 20px;
+
+  }
+
+  .About_Us_Block_Line .image-a {
+    width: 100%;
+  }
+
+  .About_Us_Block_image .image-a {
+    background-image: url("../img/image_1.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    left: 0px;
+  }
+
+  .About_Us_Block_image .image-b {
+
+    background-repeat: no-repeat;
+    width: 100%;
+    left: calc(20% + 1px);
+    top: calc(25% + 1px);
+  }
+
+
   .About_Us_Block_text p {
-    font-size: 30px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 30px;
-    width: 500px;
-    max-height: 1200px;
+    line-height: 18px;
+    max-height: 3000px;
+    padding: 450px 0px 0px 0px;
+    width: 100%;
   }
 
 
   .Activities_Block {
     display: flex;
     justify-content: center;
-    padding: 10px 100px 10px 100px;
+    padding: 10px 10px 10px 10px;
     height: 1600px;
+    width: 100%;
 
   }
 
@@ -1092,6 +1180,7 @@ input[type="submit"] {
     flex: 0 1 99%;
     height: 298px;
     box-sizing: border-box;
+    width: 100%;
 
 
   }
@@ -1099,17 +1188,19 @@ input[type="submit"] {
   .Activities_Block_description {
     width: 100%;
     display: flex;
-    padding: 150px 58px;
+    padding: 150px 0px;
     box-sizing: border-box;
-
+    margin: 0 auto;
 
   }
 
   .Activities_Block h2 {
-    font-size: 60px;
+    font-size: 46px;
     align-content: center;
     margin: 0 auto;
+    width: 100%;
   }
+
 
   .Activities_Block .Activities_Block_Ellipse {
     flex-direction: column;
@@ -1122,27 +1213,62 @@ input[type="submit"] {
   }
 
   .Activities_Block .Activities_Block_Ellipse .Activities_Block_Ellipse_view {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 18px;
     height: 250px;
     width: 100%;
 
 
   }
 
+  .Activities_Block_Ellipse_image_a {
+    position: absolute;
+    background-image: url("../img/Group_3.png");
+    width: 70px;
+    height: 70px;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    transform: translateX(30%) translateY(-15%);
+  }
+
+  .Activities_Block_Ellipse_image_b {
+    position: absolute;
+    background-image: url("../img/Group_2.png");
+    width: 100px;
+    height: 70px;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    transform: translateX(30%) translateY(-15%);
+  }
+
+  .Activities_Block_Ellipse_image_c {
+    position: absolute;
+    background-image: url("../img/Group_1.png");
+    width: 70px;
+    height: 70px;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    transform: translateX(30%) translateY(-15%);
+  }
+
 
   .For_Clients_Block {
     display: flex;
-    padding: 10px 100px 10px 100px;
+    padding: 10px 10px 10px 10px;
     height: 3600px;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
   .For_Clients_Block_Name h2 {
     display: block;
-    font-size: 60px;
+    font-size: 46px;
     align-content: center;
+    width: 100%;
   }
 
   .For_Clients_Block_Desc {
@@ -1150,15 +1276,17 @@ input[type="submit"] {
     justify-content: center;
     flex-direction: row;
     margin: 150px 0;
+    width: 100%;
   }
 
   .For_Clients_Block_Button {
     display: none;
+    width: 100%;
   }
 
   .For_Clients_Block_Text {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 18px;
     height: 250px;
     width: 100%;
 
@@ -1171,10 +1299,11 @@ input[type="submit"] {
     text-align: center;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
   .For_Clients_Block_Cart div {
-    width: 800px;
+    width: 100%;
     height: 800px;
     margin-bottom: 40px;
   }
@@ -1183,7 +1312,7 @@ input[type="submit"] {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    width: 800px;
+    width: 100%;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -1193,45 +1322,55 @@ input[type="submit"] {
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
+    width: 100%;
   }
 
 
   .For_Clients_Block_Cart_text p {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 18px;
+    width: 100%;
 
   }
 
   .For_Clients_Block_Cart_text span {
-    font-size: 42px;
-    line-height: 42px;
+    font-size: 22px;
+    line-height: 22px;
+    width: 100%;
 
   }
 
 
   .Responsebility_Block {
-    text-align: center;
-    align-items: center;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 10px 10px 10px;
+    max-height: 3006px;
+
 
   }
 
   .Responsebility_Block_Name h2 {
     display: block;
-    font-size: 60px;
+    font-size: 40px;
     align-content: center;
-
+    width: 100%;
 
   }
 
   .Responsebility_Block_Desc {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 18px;
     width: 100%;
 
   }
 
   .Responsebility_Block_img {
-    transform: translateX(0%) translateY(-80%);
+    transform: translateX(0%) translateY(-70%);
+    width: 100%;
   }
 
 
@@ -1241,64 +1380,82 @@ input[type="submit"] {
     text-align: center;
     justify-content: center;
     align-items: center;
+    width: 100%;
 
 
   }
 
-  .Countries_Block_left {
-    margin-top: -150px;
-    margin-bottom: -150px;
-  }
+
 
 
   .Countries_Block_line {
     display: none;
+    width: 100%;
   }
 
 
   .Countries_Block_Name h2 {
-    width: 500px;
-    font-size: 60px;
-    line-height: 60px;
+    width: 100%;
+    font-size: 46px;
+    line-height: 46px;
     text-align: center;
   }
 
 
   .Countries_Block_Country {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
     line-height: 40px;
     text-align: center;
+    width: 100%;
 
 
+  }
+
+  .Countries_Block_left {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 50%;
+    display: none;
+  }
+
+  .Countries_Block_left_map {
+    display: none;
+
+  }
+
+  .Countries_Block_Right {
+    height: 676px;
+    width: 50%;
   }
 
 
   .Bottom_Block {
     flex-direction: column;
     padding: 20px 20px 20px 20px;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 18px;
     text-align: center;
+    width: 100%;
 
   }
 
   .Bottom_Block_logo {
-
+    width: 100%;
     margin: 20px auto;
-
+    display: none;
 
   }
 
   .Bottom_Block_tel a {
     padding: 30px;
-
+    width: 100%;
   }
 
 
   .Bottom_Block_address, .Bottom_Block_tel, .Bottom_Block_id {
     padding: 20px;
-
+    width: 100%;
   }
 
 
