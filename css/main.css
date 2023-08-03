@@ -282,6 +282,8 @@ a:hover {
 
 .divBot {
   grid-area: 3 / 1 / 4 / 2;
+  width: 1170px;
+  overflow: visible;
 }
 
 .Header_Block {
@@ -860,7 +862,7 @@ input[type="submit"] {
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
-  transform: translateX(0%) translateY(-10%);
+  transform: translateX(0%) translateY(-5%);
 }
 
 /*Countries_Block 6*/
@@ -1437,6 +1439,7 @@ input[type="submit"] {
     line-height: 18px;
     text-align: center;
     width: 100%;
+    height: 400px;
 
   }
 
