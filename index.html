@@ -81,6 +81,7 @@
     window.onload = function () {
       updatePageContent();
     };
+
   </script>
 
 </head>
@@ -102,20 +103,17 @@
 
         </div>
       </a>
-
-
       <ul class="Header_Block_ul">
 
-
-        <!-- <li><a href="#About_Us_Block">About N.A. Invest</a></li> -->
-        <li><a data-de="About N.A. Invest" data-en="About N.A. Invest " data-ua="About N.A. Invest"
-               href="#About_Us_Block">About N.A. Invest</a></li>
-        <li><a data-de="Activities" data-en="Activities" data-ua="Activities" href="#Activities_Block">Activities</a>
+        <li><a data-de="Über N.A. Invest" data-en="About N.A. Invest" data-ua="Про N.A.Invest" href="#About_Us_Block">About
+          N.A. Invest</a></li>
+        <li><a data-de="Aktivitäten" data-en="Activities" data-ua="Діяльність" href="#Activities_Block">Activities</a>
         </li>
-        <li><a data-de="For Clients" data-en="For Clients" data-ua="For Clients" href="#For_Clients_Block">For
+        <li><a data-de="Für Kunden" data-en="For Clients" data-ua="Для клієнтів" href="#For_Clients_Block">For
           Clients</a></li>
-        <li><a data-de="Responsebility" data-en="Responsebility" data-ua="Responsebility" href="#Responsebility_Block">Responsebility</a>
+        <li><a data-de="Verantwortung" data-en="Responsebility" data-ua="Відповідальність" href="#Responsebility_Block">Responsebility</a>
         </li>
+
         <li>
 
           <a href="#" onclick="openLanguageModal();">
@@ -123,12 +121,9 @@
           </a>
 
 
-          <!-- Модальне вікно для зміни мови -->
           <div class="modalnewlang" id="modalLanguage">
             <div class="modal-content-lang">
-              <!-- Кнопка закриття -->
               <button class="close-button-lang" onclick="closeLanguageModal()">&times;</button>
-              <!-- Варіанти мов -->
               <ul class="language-options">
                 <li><a href="#" onclick="changeLanguage('en')">EN</a></li>
                 <li><a href="#" onclick="changeLanguage('de')">GE</a></li>
@@ -155,21 +150,22 @@
   <section class="Main_Block" id="Main_Block">
     <div class="Main_Block_img">
       <h1>N.A. INVEST</h1>
-      <p>Transforming opportunities into results</p>
+      <p data-de="Möglichkeiten in Ergebnisse verwandeln" data-en="Transforming opportunities into results"
+         data-ua="Перетворюємо можливості на результати">Transforming opportunities into results</p>
     </div>
   </section>
 
   <!--About_Us_Block 2-->
 
   <section class="About_Us_Block" id="About_Us_Block">
-    <h2>About Us</h2>
+    <h2 data-de="ÜBER UNS" data-en="About Us" data-ua="ПРО НАС">About Us</h2>
 
     <div>
 
       <div class="About_Us_Block_description">
-        <span>Reliability </span>
-        <span>Development </span>
-        <span>Trust </span>
+        <span data-de="Zuverlässigkeit" data-en="Reliability" data-ua="Надійність">Reliability </span>
+        <span data-de="Entwicklung" data-en="Development" data-ua="Розвиток">Development </span>
+        <span data-de="Vertrauen" data-en="Trust" data-ua="Довіра">Trust </span>
       </div>
 
       <div class="About_Us_Block_Line">
@@ -189,14 +185,30 @@
       </div>
 
       <div class="About_Us_Block_text">
-        <p>We are a versatile company that sets various tasks for itself, directed to financial performance, operational
-          excellence,
-          market expansion and risk management which mainly leads to stakeholder satisfaction, by the achievement of the
-          result.
-          <br> <br>
+        <p>
+          <span data-de="Wir sind ein vielseitiges Unternehmen, das sich verschiedene Aufgaben stellt, die auf finanzielle Leistung, Betriebsvortrefflichkeit,
+            Marktexpansion und Risikomanagement ausgerichtet sind, was hauptsächlich zur Zufriedenheit der Beteiligter führt, indem das Ergebnis erreicht wird."
+                data-en="We are a versatile company that sets various tasks for itself, directed to financial performance, operational
+            excellence,
+            market expansion and risk management which mainly leads to stakeholder satisfaction, by the achievement of the
+            result."
+                data-ua="Ми є багатогранною компанією, яка виконує різні завдання, орієнтовані на фінансову ефективність, операційну досконалість,
+            розширення ринку та управління ризиками, що в основному призводить до задоволення зацікавлених сторін шляхом досягнення результатів.">We are a versatile company that sets various tasks for itself, directed to financial performance, operational
+            excellence,
+            market expansion and risk management which mainly leads to stakeholder satisfaction, by the achievement of the
+            result.
+          </span>
 
-          Today, we are able to provide exceptional service. We work with and for our clients to solve problems of any
-          complexity and maximize profitability.
+          <span
+            data-de="Heute sind wir in der Lage, außergewöhnlichen Service zu bieten. Wir arbeiten mit und für unsere Kunden,
+          um Probleme jeglicher Komplexität zu lösen und die Rentabilität zu maximieren."
+            data-en="Today, we are able to provide exceptional service. We work with and for our clients to solve problems of any
+            complexity and maximize profitability."
+            data-ua="Сьогодні ми здатні надавати винятковий сервіс. Ми працюємо з нашими клієнтами і для наших клієнтів,
+          щоб вирішувати проблеми будь-якої складності та максимізувати прибутковість.">
+            Today, we are able to provide exceptional service. We work with and for our clients to solve problems of any
+            complexity and maximize profitability.
+          </span>
         </p>
       </div>
     </div>
@@ -207,15 +219,19 @@
 
   <section class="Activities_Block" id="Activities_Block">
     <div class="Activities_Block_description">
-      <h2>Activities</h2>
+      <h2 data-de="AKTIVITÄTEN" data-en="Activities" data-ua="ДІЯЛЬНІСТЬ">Activities</h2>
     </div>
 
     <div class="Activities_Block_Ellipse">
 
       <div class="Activities_Block_Ellipse_view ">
         <div class="Activities_Block_Ellipse_image_a"></div>
-        <h3>Investments</h3>
-        <p>We believe that careful planning and successful investment of your funds can help you achieve any goals. </p>
+        <h3 data-de="Investitionen" data-en="Investments" data-ua="Інвестиції">Investments</h3>
+        <p
+          data-de="Wir glauben, dass eine sorgfältige Planung und erfolgreiche Anlage Ihrer Gelder Ihnen helfen können, alle Ziele zu erreichen."
+          data-en="We believe that careful planning and successful investment of your funds can help you achieve any goals."
+          data-ua="Ми віримо, що ретельне планування та вдале інвестування ваших коштів може допомогти вам досягти всіх ваших цілей.">
+          We believe that careful planning and successful investment of your funds can help you achieve any goals. </p>
       </div>
 
     </div>
@@ -224,8 +240,16 @@
 
       <div class="Activities_Block_Ellipse_view left">
         <div class="Activities_Block_Ellipse_image_b"></div>
-        <h3>Commodity trading</h3>
-        <p>Quality, reliability, and continuity are the principles that underpin the company's trading activities. We
+        <h3 data-de="Rohstoffhandel" data-en="Commodity trading" data-ua="Торгівля сировинними товарами">Commodity
+          trading</h3>
+        <p
+          data-de="Qualität, Zuverlässigkeit und Kontinuität sind die Prinzipien, die die Handelsaktivitäten des
+        Unternehmens unterstützen. Wir sind bereit, ein Partner zu werden, auf den Sie sich verlassen können."
+          data-en="Quality, reliability, and continuity are the principles that underpin the company's trading activities. We
+          are ready to become a partner you can rely on."
+          data-ua="Якість, надійність і безперервність - це принципи, які лежать в основі торгової діяльності компанії.
+        Ми готові стати партнером, на якого ви можете покластися.">
+          Quality, reliability, and continuity are the principles that underpin the company's trading activities. We
           are ready to become a partner you can rely on. </p>
       </div>
 
@@ -235,8 +259,14 @@
 
       <div class="Activities_Block_Ellipse_view">
         <div class="Activities_Block_Ellipse_image_c"></div>
-        <h3>Managment</h3>
-        <p>We will help you to focus on global goals by setting up and securing the complete functioning of internal
+        <h3 data-de="Geschäftsführung" data-en="Managment" data-ua="Управління">Managment</h3>
+        <p
+          data-de="Wir helfen Ihnen, sich auf globale Ziele zu konzentrieren, indem wir die vollständige Funktionsfähigkeit
+        interner Unternehmenssysteme einrichten und sicherstellen."
+          data-en=" We will help you to focus on global goals by setting up and securing the complete functioning of internal
+          enterprise systems."
+          data-ua="Ми допомагаємо вам зосередитися на глобальних цілях, створюючи і забезпечуючи повну функціональність внутрішніх систем компанії.">
+          We will help you to focus on global goals by setting up and securing the complete functioning of internal
           enterprise systems. </p>
       </div>
 
@@ -249,15 +279,26 @@
 
   <section class="For_Clients_Block" id="For_Clients_Block">
 
-    <div class="For_Clients_Block_Name"><h2>FOR CLIENTS</h2></div>
+    <div class="For_Clients_Block_Name"><h2 data-de="FÜR KUNDEN" data-en="FOR CLIENTS" data-ua="ДЛЯ КЛІЄНТІВ">FOR
+      CLIENTS</h2></div>
 
     <div class="For_Clients_Block_Desc">
       <div class="For_Clients_Block_Text">
-        <p>
+        <p
+          data-de="Unsere Fähigkeiten, Qualität der Dienstleistungen, unser sensible Verständnis für die Bedürfnisse des Kunden,
+        unsere Arbeitseffizienz und Liebe zu unserem Geschäft helfen Ihnen garantiert dabei, neue Perspektiven für Ihr Unternehmen zu erkennen."
+          data-en="Our capabilities, quality of services, sensitive understanding of the needs of the client,
+          efficiency of work and love for our business, are guaranteed to help you see new prospects for your business. "
+          data-ua="Наші навички, якість послуг, чуйне розуміння потреб клієнта, ефективність роботи та любов до своєї справи
+        гарантовано допоможуть вам виявити нові перспективи для вашого бізнесу.">
           Our capabilities, quality of services, sensitive understanding of the needs of the client,
           efficiency of work and love for our business, are guaranteed to help you see new prospects for your business.
+        </p>
           <br><br>
-
+        <p
+          data-de="Wir bieten unseren Kunden die Zusammenarbeit in mehrere Richtungen an."
+          data-en="We offer our clients cooperation in several directions."
+          data-ua="Ми пропонуємо нашим клієнтам співпрацю в декількох напрямках.">
           We offer our clients cooperation in several directions.
         </p>
       </div>
@@ -295,13 +336,22 @@
 
         </div>
         <div class="For_Clients_Block_Cart_text">
+          <p class="For_Clients_Block_Cart_text_flex">
 
-          <p>
-            <span>Commodity trading</span> <br> <br>
-            Raw material <br><br>
-            Industrial goods <br><br>
-            Industrial equipment <br><br>
+            <span class="For_Clients_Block_Cart_text_flex_spanOne">
+              <span data-de="Rohstoffhandel" data-en="Commodity trading" data-ua="Торгівля сировинними товарами">Commodity trading</span> <br><br>
+            </span>
+
+            <span class="For_Clients_Block_Cart_text_flex_spanTwo">
+              <span data-de="Rohstoff" data-en="Raw material" data-ua="-	Сировина">Raw material</span><br> <br>
+              <span data-de="Industriegüter" data-en="Industrial goods"
+                    data-ua="-	Промислові товари">Industrial goods</span><br> <br>
+              <span data-de="Industrieanlagen" data-en="Industrial equipment" data-ua="-	Промислове обладнання">Industrial equipment</span><br>
+            </span>
+
           </p>
+
+
         </div>
 
 
@@ -311,12 +361,19 @@
 
         </div>
         <div class="For_Clients_Block_Cart_text">
+          <p class="For_Clients_Block_Cart_text_flex">
 
-          <p>
-            <span>Investments</span> <br> <br>
-            Industrial production <br><br>
-            Industrial and alternative energy <br><br>
-            Construction projects <br>
+            <span class="For_Clients_Block_Cart_text_flex_spanOne">
+              <span data-de="Investitionen" data-en="Investments" data-ua="Інвестиції">Investments</span> <br> <br>
+            </span>
+
+            <span class="For_Clients_Block_Cart_text_flex_spanTwo">
+              <span data-de="Industrieproduktion" data-en="Industrial production" data-ua="-	Промислове виробництво">Industrial production</span><br> <br>
+              <span data-de="Industrielle und alternative Energie" data-en="Industrial and alternative energy"
+                    data-ua="-	Промислова та альтернативна енергетика">Industrial and alternative energy</span><br> <br>
+              <span data-de="Bauprojekte" data-en="Construction projects" data-ua="-	Будівельні проекти">Construction projects</span><br>
+            </span>
+
           </p>
         </div>
 
@@ -327,12 +384,21 @@
 
         </div>
         <div class="For_Clients_Block_Cart_text">
-          <p>
-            <span>Managment</span> <br> <br>
-            Optimization and control <br> <br>
-            Accounting and administration <br> <br>
+          <p class="For_Clients_Block_Cart_text_flex">
+
+            <span class="For_Clients_Block_Cart_text_flex_spanOne">
+              <span data-de="Geschäftsleitung" data-en="Managment" data-ua="Управління">Managment</span> <br><br>
+            </span>
+
+            <span class="For_Clients_Block_Cart_text_flex_spanTwo">
+              <span data-de="Optimierung und Kontrolle" data-en="Optimization and control"
+                    data-ua="-	Оптимізація та контроль">Optimization and control</span> <br><br>
+              <span data-de="Buchhaltung und Verwaltung" data-en="Accounting and administration"
+                    data-ua="-	Облік та адміністрування">Accounting and administration</span><br>
+            </span>
 
           </p>
+
         </div>
 
 
@@ -346,15 +412,34 @@
 
   <section class="Responsebility_Block" id="Responsebility_Block">
 
-    <div class="Responsebility_Block_Name"><h2>Responsebility</h2></div>
+    <div class="Responsebility_Block_Name"><h2 data-de="VERANTWORTUNG" data-en="Responsebility"
+                                               data-ua="ВІДПОВІДАЛЬНІСТЬ">Responsebility</h2></div>
 
 
     <div class="Responsebility_Block_Desc">
       <div class="Responsebility_Block_Text">
-        <p>N.A. Invest team responsibly approaches the work and quality of services we provide.
+        <p
+          data-de="InDas Team von N.A. Invest geht verantwortungsbewusst mit der Arbeit und der Qualität der von uns erbrachten Dienstleistungen um.
+        Wir sind aufmerksam und konsequent auf die Achtung der Menschenrechte, den Umweltschutz und die Einhaltung aller geltenden Gesetze.vestitionen"
+          data-en="N.A. Invest team responsibly approaches the work and quality of services we provide.
+          We are attentive and consistent in respecting human rights, protecting the environment and complying with all
+          applicable laws."
+          data-ua="Команда N.A.Invest відповідально ставиться до своєї роботи та якості послуг, які ми надаємо.
+        Ми уважно та послідовно ставимося до дотримання прав людини, захисту навколишнього середовища та дотримання всіх норм чинного законодавства.">
+          N.A. Invest team responsibly approaches the work and quality of services we provide.
           We are attentive and consistent in respecting human rights, protecting the environment and complying with all
           applicable laws.
-          <br> <br>
+
+        </p>
+
+        <p
+          data-de="Wir berücksichtigen immer die Meinungen von Fachexperten und beachten die Vision unserer Spezialisten
+        in bestimmten Bereichen. Dies schafft eine solide Struktur für die Umsetzung von Aufgaben beliebiger Komplexität."
+          data-en="We always take into account the opinions of subject matter experts and take into account the vision of our
+          specialists in specific areas.
+          This creates a solid structure for the implementation of tasks of any complexity."
+          data-ua="Ми завжди враховуємо думки експертів у цій галузі та дотримуємося бачення наших фахівців у конкретних сферах.
+        Це створює міцну структуру для реалізації завдань будь-якої складності.">
 
           We always take into account the opinions of subject matter experts and take into account the vision of our
           specialists in specific areas.
@@ -383,17 +468,18 @@
       </div>
 
       <div class="Countries_Block_Name">
-        <h2>Countries <br>
+        <h2 data-de="LÄNDER DES GESCHÄFTSTÄTIGKEIT" data-en="Countries Of operating" data-ua="КРАЇНИ У ЯКИХ МИ ДІЄМО">
+          Countries <br>
           Of operating</h2>
 
         <div class="Countries_Block_Country">
           <p>
-            Ukraine <br>
-            Germany <br>
-            Bulgari <br>
-            Kazakhstan <br>
-            USA <br>
-            Portugal <br>
+          <p data-de="Ukraine" data-en="Ukraine" data-ua="Україна">Ukraine</p>
+          <p data-de="Deutschland" data-en="Germany" data-ua="Німеччина">Germany</p>
+          <p data-de="Bulgarien" data-en="Bulgari" data-ua="Болгарія">Bulgari</p>
+          <p data-de="Kasachstan" data-en="Kazakhstan" data-ua="Казахстан">Kazakhstan</p>
+          <p data-de="USA" data-en="USA" data-ua="США">USA</p>
+          <p data-de="Portugal" data-en="Portugal" data-ua="Португалія">Portugal</p>
           </p>
         </div>
       </div>
@@ -430,7 +516,7 @@
 
     </div>
 
-    <a href="#Main">
+    <a href="#Main_Block">
       <div class="Bottom_Block_logo"></div>
     </a>
 
